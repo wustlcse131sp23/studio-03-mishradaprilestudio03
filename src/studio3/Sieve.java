@@ -6,7 +6,7 @@ public class Sieve {Scanner in = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		
-	}
+	
 		
 	{	
 	int n = 0;	 
@@ -33,7 +33,13 @@ public class Sieve {Scanner in = new Scanner(System.in);
 		for (int i = 2; i < Math.sqrt(n); i++) {
 			if (primeNumbers [i] == true) {
 				
-		for (int j = i*i; j < n; j + i) {
+		for (int j = i*i; j < n; i + j) {
+			primeNumbers[j] = false;
+			}
+		for (int i = 2; i < primeNumbers.length; i++) {
+			if (primeNumbers [i] == true) {
+				System.out.println(i);
+
 			}
 
 			
@@ -44,13 +50,10 @@ public class Sieve {Scanner in = new Scanner(System.in);
 		
 		
 		
-		{
-			
-		
-		
+	
 
+}
+}
+}
 	}
-
-}
-}
 }
